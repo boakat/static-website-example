@@ -3,7 +3,7 @@ MAINTAINER  boakat(akaboidi@hotmail.fr)
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y git nginx
 RUN rm -rf /var/www/html/*
-RUN git clone https://github.com/diranetafen/static-website-example.git /var/www/html/
+RUN git clone https://github.com/boakat/static-website-example.git /var/www/html/
 RUN adduser -D myuser
 USER myuser
 EXPOSE 5000
